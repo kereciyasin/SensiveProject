@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ValidationRules\" />
+    <Folder Include="Extension\" />
+    <Folder Include="ErrorMessages\" />
+    <Folder Include="Concrete\" />
+    <Folder Include="Abstract\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SensiveProject.DataAccesLayer\SensiveProject.DataAccesLayer.csproj" />
+  </ItemGroup>
+
+</Project>

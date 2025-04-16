@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensiveProject.EntityLayer"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensiveProject.DataAccesLayer", "SensiveProject.DataAccesLayer\SensiveProject.DataAccesLayer.csproj", "{0515D8D5-0D66-40C4-BE73-4548CBEB93FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensiveProject.BusinessLayer", "SensiveProject.BusinessLayer\SensiveProject.BusinessLayer.csproj", "{8F88283A-0264-40E3-A3F0-9F63AE7888B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensiveProject.PresentationLayer", "SensiveProject.PresentationLayer\SensiveProject.PresentationLayer.csproj", "{260D4DB1-1D6D-4CA8-8DCF-2296766A9FAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{0515D8D5-0D66-40C4-BE73-4548CBEB93FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0515D8D5-0D66-40C4-BE73-4548CBEB93FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0515D8D5-0D66-40C4-BE73-4548CBEB93FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F88283A-0264-40E3-A3F0-9F63AE7888B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F88283A-0264-40E3-A3F0-9F63AE7888B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F88283A-0264-40E3-A3F0-9F63AE7888B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F88283A-0264-40E3-A3F0-9F63AE7888B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{260D4DB1-1D6D-4CA8-8DCF-2296766A9FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260D4DB1-1D6D-4CA8-8DCF-2296766A9FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260D4DB1-1D6D-4CA8-8DCF-2296766A9FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260D4DB1-1D6D-4CA8-8DCF-2296766A9FAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
