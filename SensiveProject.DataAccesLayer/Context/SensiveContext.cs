@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SensiveProject.DataAccesLayer.Context
 {
-    public class SensiveContext : DbContext
+    public class SensiveContext : IdentityDbContext<AppUser, AppRole, int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
