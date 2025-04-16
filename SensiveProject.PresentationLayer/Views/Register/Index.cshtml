@@ -1,15 +1,23 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
-<!DOCTYPE html>
+<div class="container">
+    <br />
+    <br />
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-</body>
-</html>
+    <div class="alert alert-succes"><h2>Yeni Kullanici Kaydi</h2></div>
+    <form method="post">
+        <label>Adiniz</label>
+        <input type="text" name="Name" class="form-control" placeholder="Adiniz" required />
+        <label>Soyadiniz</label>
+        <input type="text" name="Surname" class="form-control" placeholder="Soyadiniz" required />
+        <label>Email</label>
+        <input type="email" name="Email" class="form-control" placeholder="Email" required />
+        <label>Kullanci Adiniz</label>
+        <input type="text" name="Username" class="form-control" placeholder="Kullanci Adiniz" required />
+        <label>Sifre</label>
+        <input type="password" name="Password" class="form-control" placeholder="Sifre" required />
+    </form>
+
+</div>
