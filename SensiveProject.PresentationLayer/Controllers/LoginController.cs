@@ -23,7 +23,7 @@ namespace SensiveProject.PresentationLayer.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(LoginViewModel model)
         {
-            var result = await _singInManager.PasswordSignInAsync(model.Username, model.Password, true, false);
+            var result = await _singInManager.PasswordSignInAsync(model.Username, model.Password, false, true);
             if (result.Succeeded)
             {
                 return RedirectToAction("Index", "Category");
