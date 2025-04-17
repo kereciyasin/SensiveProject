@@ -36,7 +36,7 @@
                     <img src="/Login_v1/images/img-01.png" alt="IMG">
                 </div>
 
-                <form class="login100-form validate-form">
+                <form class="login100-form validate-form" method="post">
                     <span class="login100-form-title">
                         Yeni Kullanici Kaydi
                     </span>
@@ -74,12 +74,14 @@
                     </div>
 
                     <div class="wrap-input100 validate-input">
-                        <input class="input100" type="password" asp-for="Password" placeholder="Sifreniz">
+                        <input class="input100" type="password" asp-for="Password" placeholder="Şifreniz">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-lock" aria-hidden="true"></i>
                         </span>
                     </div>
+
+                    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
 
 
                     <div class="container-login100-form-btn">

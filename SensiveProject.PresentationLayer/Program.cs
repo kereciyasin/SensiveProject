@@ -1,5 +1,6 @@
 using SensiveProject.DataAccesLayer.Context;
 using SensiveProject.EntityLayer.Concrete;
+using SensiveProject.PresentationLayer.Models;
 
 namespace SensiveProject.PresentationLayer
 {
@@ -11,7 +12,7 @@ namespace SensiveProject.PresentationLayer
 
             // Add services to the container.
 
-            builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<SensiveContext>();
+            builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<SensiveContext>().AddErrorDescriber<CustomIdentityValidator>();
             builder.Services.AddDbContext<SensiveContext>();
 
 
