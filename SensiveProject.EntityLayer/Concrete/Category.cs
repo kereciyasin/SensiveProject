@@ -11,6 +11,6 @@ namespace SensiveProject.EntityLayer.Concrete
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
 
-        public List<Artikel> Artikels { get; set; } = new List<Artikel>();
+        public List<Artikel> Artikels { get; set; } 
     }
 }
