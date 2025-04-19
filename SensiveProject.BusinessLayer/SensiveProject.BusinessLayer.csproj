@@ -12,7 +12,10 @@
     <Folder Include="Extension\" />
     <Folder Include="ErrorMessages\" />
     <Folder Include="Concrete\" />
-    <Folder Include="Abstract\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
   </ItemGroup>
 
   <ItemGroup>
