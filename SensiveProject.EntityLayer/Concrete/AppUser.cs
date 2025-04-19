@@ -13,6 +13,7 @@ namespace SensiveProject.EntityLayer.Concrete
         public string Surname { get; set; }
         public string? ImageUrl { get; set; }
 
-        public List<Artikel> Artikels { get; set; } 
+        public List<Artikel> Artikels { get; set; }
+        public List<Comment> Comments { get; set; }
     }
 }
