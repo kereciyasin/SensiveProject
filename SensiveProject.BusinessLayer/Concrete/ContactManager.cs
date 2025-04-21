@@ -33,6 +33,11 @@ namespace SensiveProject.BusinessLayer.Concrete
             _contactDal.TDelete(id);
         }
 
+        public List<Contact> TGetAll()
+        {
+            return _contactDal.GetAll();
+        }
+
         public void TInsert(Contact entity)
         {
             _contactDal.TInsert(entity);

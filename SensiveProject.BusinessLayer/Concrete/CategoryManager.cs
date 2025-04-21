@@ -34,6 +34,11 @@ namespace SensiveProject.BusinessLayer.Concrete
             _categoryDal.Delete(id);
         }
 
+        public List<Category> TGetAll()
+        {
+            return _categoryDal.GetAll();
+        }
+
         public void TInsert(Category entity)
         {
             if (entity.CategoryName.Length >= 5 && entity.CategoryName.Length <= 50)

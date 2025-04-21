@@ -33,6 +33,11 @@ namespace SensiveProject.BusinessLayer.Concrete
             _artikelDal.Delete(id);
         }
 
+        public List<Artikel> TGetAll()
+        {
+            return _artikelDal.GetAll();
+        }
+
         public void TInsert(Artikel entity)
         {
             _artikelDal.Insert(entity);

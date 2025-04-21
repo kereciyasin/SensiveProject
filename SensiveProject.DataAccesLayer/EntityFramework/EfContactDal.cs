@@ -15,5 +15,20 @@ namespace SensiveProject.DataAccesLayer.EntityFramework
         public EfContactDal(SensiveContext context) : base(context)
         {
         }
+
+        public void TDelete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TInsert(Contact entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TUpdate(Contact entity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

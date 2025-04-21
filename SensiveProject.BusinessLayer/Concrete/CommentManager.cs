@@ -33,6 +33,11 @@ namespace SensiveProject.BusinessLayer.Concrete
             _commentDal.Delete(id);
         }
 
+        public List<Comment> TGetAll()
+        {
+            return _commentDal.GetAll();
+        }
+
         public void TInsert(Comment entity)
         {
             _commentDal.Insert(entity);
