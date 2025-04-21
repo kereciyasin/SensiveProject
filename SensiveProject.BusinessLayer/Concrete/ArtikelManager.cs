@@ -1,4 +1,5 @@
 ﻿using SensiveProject.BusinessLayer.Abstract;
+using SensiveProject.DataAccesLayer.Abstract;
 using SensiveProject.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,29 +11,43 @@ namespace SensiveProject.BusinessLayer.Concrete
 {
     public class ArtikelManager : IArtikelService
     {
+        private readonly IArtikelDal _artikelDal;
+
+        public ArtikelManager(IArtikelDal artikelDal)
+        {
+            _artikelDal = artikelDal;
+        }
+
         public List<Artikel> GetAll()
         {
-            throw new NotImplementedException();
+            return _artikelDal.GetAll();
         }
 
         public Artikel GetById(int id)
         {
-            throw new NotImplementedException();
+            return _artikelDal.GetById(id);
         }
 
         public void TDelete(int id)
         {
-            throw new NotImplementedException();
+            _artikelDal.Delete(id);
         }
 
         public void TInsert(Artikel entity)
         {
-            throw new NotImplementedException();
+            _artikelDal.Insert(entity);
         }
 
         public void TUpdate(Artikel entity)
         {
-            throw new NotImplementedException();
+            if (entity.Description != "" && entity.ArtikelTitle.Length >= 5 && entity.ArtikelTitle.Length <= 100)
+            {
+                _artikelDal.Update(entity);
+            }
+            else
+            {
+                // throw new Exception("Lütfen 5 ile 100 karakter arasında bir başlık giriniz.");
+            }
         }
     }
 }
