@@ -21,27 +21,34 @@ namespace SensiveProject.BusinessLayer.Concrete
 
         public List<Category> GetAll()
         {
-            throw new NotImplementedException();
+            return _categoryDal.GetAll();
         }
 
         public Category GetById(int id)
         {
-            throw new NotImplementedException();
+            return _categoryDal.GetById(id);
         }
 
         public void TDelete(int id)
         {
-            throw new NotImplementedException();
+            _categoryDal.Delete(id);
         }
 
         public void TInsert(Category entity)
         {
-            throw new NotImplementedException();
+            if (entity.CategoryName.Length >= 5 && entity.CategoryName.Length <= 50)
+            {
+                _categoryDal.Insert(entity);
+            }
+            else
+            {
+                throw new Exception("Category name must be between 5 and 50 characters.");
+            }
         }
 
         public void TUpdate(Category entity)
         {
-            throw new NotImplementedException();
+            _categoryDal.Update(entity);
         }
     }
 }
