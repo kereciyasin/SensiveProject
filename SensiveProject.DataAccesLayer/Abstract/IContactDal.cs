@@ -9,8 +9,10 @@ namespace SensiveProject.DataAccesLayer.Abstract
 {
     public interface IContactDal : IGenericDal<Contact>
     {
-        
+        void TDelete(int id);
+        void TInsert(Contact entity);
+        void TUpdate(Contact entity);
     }
-    
-    
+
+
 }
