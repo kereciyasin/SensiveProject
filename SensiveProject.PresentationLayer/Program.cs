@@ -1,4 +1,8 @@
+using SensiveProject.BusinessLayer.Abstract;
+using SensiveProject.BusinessLayer.Concrete;
+using SensiveProject.DataAccesLayer.Abstract;
 using SensiveProject.DataAccesLayer.Context;
+using SensiveProject.DataAccesLayer.EntityFramework;
 using SensiveProject.EntityLayer.Concrete;
 using SensiveProject.PresentationLayer.Models;
 
@@ -14,6 +18,18 @@ namespace SensiveProject.PresentationLayer
 
             builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<SensiveContext>().AddErrorDescriber<CustomIdentityValidator>();
             builder.Services.AddDbContext<SensiveContext>();
+
+            builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
+            builder.Services.AddScoped<ICategoryService, CategoryManager>();
+
+            builder.Services.AddScoped<IArtikelDal, EfArtikelDal>();
+            builder.Services.AddScoped<IArtikelService, ArtikelManager>();
+
+            builder.Services.AddScoped<ICommentDal, EfCommentDal>();
+            builder.Services.AddScoped<ICommentService, CommentManager>();
+
+            builder.Services.AddScoped<IContactDal, EfContactDal>();
+            builder.Services.AddScoped<IContactService, ContactManager>();
 
 
 
