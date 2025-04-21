@@ -26,23 +26,29 @@ namespace SensiveProject.DataAccesLayer.Repositories
 
         public List<T> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().ToList();
         }
+
 
         public T GetById(int id)
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().Find(id);
         }
+
 
         public void Insert(T entity)
         {
-            throw new NotImplementedException();
+            _context.Set<T>().Add(entity);
+            _context.SaveChanges();
         }
+
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            _context.Set<T>().Update(entity);
+            _context.SaveChanges();
         }
+
     }
 
 }

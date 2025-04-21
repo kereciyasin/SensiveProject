@@ -38,6 +38,16 @@ namespace SensiveProject.BusinessLayer.Concrete
             return _artikelDal.GetAll();
         }
 
+        public List<Artikel> TGetAll(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Artikel TGetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void TInsert(Artikel entity)
         {
             _artikelDal.Insert(entity);

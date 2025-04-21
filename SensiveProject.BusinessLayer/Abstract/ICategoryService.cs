@@ -9,5 +9,6 @@ namespace SensiveProject.BusinessLayer.Abstract
 {
     public interface ICategoryService : IGenericService<Category>
     {
+        object TGetAll();
     }
 }

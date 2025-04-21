@@ -38,6 +38,16 @@ namespace SensiveProject.BusinessLayer.Concrete
             return _commentDal.GetAll();
         }
 
+        public List<Comment> TGetAll(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Comment TGetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void TInsert(Comment entity)
         {
             _commentDal.Insert(entity);

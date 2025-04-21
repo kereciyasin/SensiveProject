@@ -38,6 +38,16 @@ namespace SensiveProject.BusinessLayer.Concrete
             return _contactDal.GetAll();
         }
 
+        public List<Contact> TGetAll(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Contact TGetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void TInsert(Contact entity)
         {
             _contactDal.TInsert(entity);

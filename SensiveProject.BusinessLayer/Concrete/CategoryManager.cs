@@ -3,14 +3,10 @@ using SensiveProject.DataAccesLayer.Abstract;
 using SensiveProject.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SensiveProject.BusinessLayer.Concrete
 {
     public class CategoryManager : ICategoryService
-
     {
         private readonly ICategoryDal _categoryDal;
 
@@ -39,6 +35,16 @@ namespace SensiveProject.BusinessLayer.Concrete
             return _categoryDal.GetAll();
         }
 
+        public List<Category> TGetAll(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Category TGetById(int id)
+        {
+            return _categoryDal.GetById(id);
+        }
+
         public void TInsert(Category entity)
         {
             if (entity.CategoryName.Length >= 5 && entity.CategoryName.Length <= 50)
@@ -54,6 +60,11 @@ namespace SensiveProject.BusinessLayer.Concrete
         public void TUpdate(Category entity)
         {
             _categoryDal.Update(entity);
+        }
+
+        object ICategoryService.TGetAll()
+        {
+            return TGetAll();
         }
     }
 }
