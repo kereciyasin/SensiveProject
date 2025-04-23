@@ -62,9 +62,5 @@ namespace SensiveProject.BusinessLayer.Concrete
             _categoryDal.Update(entity);
         }
 
-        object ICategoryService.TGetAll()
-        {
-            return TGetAll();
-        }
     }
 }
