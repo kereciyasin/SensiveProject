@@ -12,7 +12,7 @@ namespace SensiveProject.EntityLayer.Concrete
         public int ArtikelId { get; set; }
         public string ArtikelTitle { get; set; }
         public string Description { get; set; }
-        public string CreatedDate { get; set; }
+        public DateTime CreatedDate { get; set; }
         public string CoverImageUrl { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
