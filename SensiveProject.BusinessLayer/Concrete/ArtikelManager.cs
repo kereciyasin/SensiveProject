@@ -28,6 +28,11 @@ namespace SensiveProject.BusinessLayer.Concrete
             return _artikelDal.GetById(id);
         }
 
+        public List<Artikel> TArtikelListWithCategory()
+        {
+            return _artikelDal.ArtikelListWithCategory();
+        }
+
         public void TDelete(int id)
         {
             _artikelDal.Delete(id);

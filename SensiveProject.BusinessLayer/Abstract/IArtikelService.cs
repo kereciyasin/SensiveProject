@@ -9,7 +9,7 @@ namespace SensiveProject.BusinessLayer.Abstract
 {
     public interface IArtikelService : IGenericService<Artikel>
     {
-        // Add any additional methods specific to Artikel service here
+        List<Artikel> TArtikelListWithCategory();
     }
 
 }
