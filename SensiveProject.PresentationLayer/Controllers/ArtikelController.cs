@@ -17,5 +17,11 @@ namespace SensiveProject.PresentationLayer.Controllers
             var values = _artikelService.TGetAll();
             return View(values);
         }
+
+        public IActionResult ArtikelListWithCategory()
+        {
+            var values = _artikelService.TArtikelListWithCategory();
+            return View(values);
+        }
     }
 }
