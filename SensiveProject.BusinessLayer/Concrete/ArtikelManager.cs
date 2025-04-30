@@ -33,6 +33,11 @@ namespace SensiveProject.BusinessLayer.Concrete
             return _artikelDal.ArtikelListWithCategory();
         }
 
+        public List<Artikel> TArtikelListWithCategoryAndAppUser()
+        {
+            return _artikelDal.ArtikelListWithCategoryAndAppUser();
+        }
+
         public void TDelete(int id)
         {
             _artikelDal.Delete(id);

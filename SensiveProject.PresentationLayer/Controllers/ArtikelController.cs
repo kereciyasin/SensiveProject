@@ -23,5 +23,11 @@ namespace SensiveProject.PresentationLayer.Controllers
             var values = _artikelService.TArtikelListWithCategory();
             return View(values);
         }
+
+        public IActionResult ArtikelListWithCategoryAndAppUser()
+        {
+            var values = _artikelService.TArtikelListWithCategoryAndAppUser();
+            return View(values);
+        }
     }
 }

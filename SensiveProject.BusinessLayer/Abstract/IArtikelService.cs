@@ -10,6 +10,7 @@ namespace SensiveProject.BusinessLayer.Abstract
     public interface IArtikelService : IGenericService<Artikel>
     {
         List<Artikel> TArtikelListWithCategory();
+        List<Artikel> TArtikelListWithCategoryAndAppUser();
     }
 
 }
