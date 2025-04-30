@@ -1,0 +1,32 @@
+﻿@model Artikel
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <br />
+
+    <form method="post">
+        <lable>Makale Basligi</lable>
+        <input type="text" name="ArtikelTitle" class="form-control" />
+        <br />
+        <lable>Makale Aciklamasi</lable>
+        <input type="text" name="Description" class="form-control" />
+        <br />
+        <lable>Kapak Fotograf Url</lable>
+        <input type="text" name="CoverImageUrl" class="form-control" />
+        <br />
+        <lable>Kategori</lable>
+        @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.v1, new { @class = "form-control" })
+        <br />
+        <lable>Kullanici</lable>@* 
+        @Html.DropDownListFor(x => x.AppUserId, (List<SelectListItem>)ViewBag.v2, new { @class = "form-control" }) *@
+        <br />
+
+        <button class="btn btn-info">Makele Ekle</button>
+    </form>
+</div>
